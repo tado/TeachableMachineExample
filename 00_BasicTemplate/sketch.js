@@ -23,10 +23,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(320, 260);
+  createCanvas(640, 500);
   // ビデオを作成
   video = createCapture(VIDEO, { flipped: true });
-  video.size(320, 240);
+  video.size(640, 480);
   video.hide();
   classifier.classifyStart(video, gotResult);
 }
